@@ -75,3 +75,7 @@ def mediana():
 	          lista[posicion + 1] = temp
 	print ("La lista ordenada es:", lista)
 	print ("La mediana es:",lista[2])
+#Esto pude ser reducido a esto 
+#from statistics import median
+#median([1, 3, 5])
+#pero aun asi usaremos lo de cesar n.n
