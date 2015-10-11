@@ -43,18 +43,16 @@ def mediana():
 #median([1, 3, 5])
 #pero aun asi usaremos lo de cesar n.n
 
-#--------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
 #Moda
-import numpy as np #se necesita instalar la libreria de numpy
-import scipy.stats 
+import numpy as np #Se necesita esta libreria
+import scipy.stats #Esta tambien se descarga
 a = np.array([1,2,3,1,2,1,1,1,3,2,2,1])
 b = (3,4,5,6,7,8,5,5,6,2,3,1,2,5,5,1,3,2,2,1)
-print ("La moda del set a es: ", scipy.stats.mode(a))
-print ("La moda del set b es: ", scipy.stats.mode(b)
+print "La moda del set a es: ", scipy.stats.mode(a)[0][0], "y se repite",scipy.stats.mode(a)[1][0] ,"veces"
+print "La moda del set b es: ", scipy.stats.mode(b)[0][0], "y se repite",scipy.stats.mode(a)[1][0] ,"veces"
 #http://www.numpy.org/
-#la libreria
-
-
+#en el link se bajan las dos librerias que se utiliza
 
 
 
