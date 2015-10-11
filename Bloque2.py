@@ -1,12 +1,13 @@
 #Media Aritmetica
-print("Dama una lista de datos")
-data=[1,2,436,3,6,2,4]
-#falta que los datos de la lista los ingrese el usuario
-print (data)
-dOrder=sorted(data)
-
-n=len(dOrder) 
-print ('Mediana Aritmetica: ', round(sum(data)*1.0/n,2))
+def mediaAritmetica():
+	print("Dama una lista de datos")
+	data=[1,2,436,3,6,2,4]
+	#falta que los datos de la lista los ingrese el usuario
+	print (data)
+	dOrder=sorted(data)
+	
+	n=len(dOrder) 
+	print ('Mediana Aritmetica: ', round(sum(data)*1.0/n,2))
 
 #--------------------------------------------------------------------------------------------
 
