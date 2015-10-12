@@ -55,6 +55,87 @@ def moda():
 	#http://www.numpy.org/
 	#en el link se bajan las dos librerias que se utiliza
 
+#---------------------------------------------------------------------------------------------
+
+import math
+print ("MEDIA GEOMÉTRICA")
+print ("La media geometrica de una cantidad finita de números(digamos N números)\nes la raíz enésima del producto de todos los números.")
+
+print ("n√Σ x")
+#Lo dejo del 1 al 5 mientras es que me dio sueño y me salio orita a las 3 am xD
+#Yo creo que lo seguire hasta 10
+numero = input("ingresa el numero de n del 1 al 5\n>")
+num = int(numero)
+
+if (num == 1):
+    print ("Haz seleccionado 1")
+    x = input("Ingresa el numero que desees calcular\n")
+    x1 = float(x)
+    raiz = (x1 ** (1/1))
+    print (raiz)
+
+elif (num == 2):
+    print ("Haz seleccionado 2")
+    x = input ("Ingresa el primer numero\n>")
+    x2 = input ("Ingresa el segundo numero\n>")
+    x_ = float (x)
+    x_2=float (x2)
+    mult = (x_ * x_2)
+    print ("=2√",x,"x",x2)
+    print ("=2√",mult)
+    raiz = (mult ** (1/2))
+    print ("El resultado es:",raiz)
+
+elif (num == 3):
+    print ("Haz seleccionado 3")
+    x  = input ("Ingresa el primer numero\n>")
+    x2 = input ("Ingresa el segundo numero\n>")
+    x3 = input ("Ingresa el tercer numero\n>")
+    x_= float (x)
+    x_2 = float (x2)
+    x_3 = float (x3)
+    mult = (x_ * x_2 * x_3)
+    print ("=3√",x,"x",x2,"x",x3)
+    print ("=3√",mult)
+    raiz = (mult ** (1/3))
+    print ("El resultado es:",raiz)
+
+elif (num == 4):
+    print ("Haz seleccionado 4")
+    x  = input ("Ingresa el primer numero\n>")
+    x2 = input ("Ingresa el segundo numero\n>")
+    x3 = input ("Ingresa el tercer numero\n>")
+    x4 = input ("Ingresa el cuarto numero\n>")
+    x_= float (x)
+    x_2 = float (x2)
+    x_3 = float (x3)
+    x_4 = float (x4)
+    mult = (x_ * x_2 * x_3 * x_4)
+    print ("=4√",x,"x",x2,"x",x3,"x",x4)
+    print ("=4√",mult)
+    raiz = (mult ** (1/4))
+    print ("El resultado es:",raiz)
+
+elif (num == 5):
+    print ("Haz seleccionado 5")
+    x  = input ("Ingresa el primer numero\n>")
+    x2 = input ("Ingresa el segundo numero\n>")
+    x3 = input ("Ingresa el tercer numero\n>")
+    x4 = input ("Ingresa el cuarto numero\n>")
+    x5 = input ("Ingresa el quinto numero\n>")
+    x_= float (x)
+    x_2 = float (x2)
+    x_3 = float (x3)
+    x_4 = float (x4)
+    x_5 = float (x5)
+    mult = (x_ * x_2 * x_3 * x_4 * x_4)
+    print ("=5√",x,"x",x2,"x",x3,"x",x4,"x",x5)
+    print ("=5√",mult)
+    raiz = (mult ** (1/5))
+    print ("El resultado es:",raiz)
+
+else:
+    print ("Caracter no valido")
 
 
 
