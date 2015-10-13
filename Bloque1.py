@@ -1,11 +1,25 @@
-#Compañeros una disculpa por la tardanza pero por motivos de que no estoy en mi casa no he podido subir nada, por el momento subo esta parte que tenia guardada en mi celular, en el transcurso de la madrugada subire lo demas, Erni no te enojes wey, tengo algunos problemas y con trabajos puedo subir esto.
-#Cambio y fuera;
-
-
 print ("BLOQUE 1")
 print ("CONCEPTOS GENERALES\n")
 
+
 ###########ALGORITMO
+print ("DISTRIBUCION DE FRECUENCIA")
+print ("Problema 1.1 Los datos de la siguiente tabla muestran a los equipos con mas campeonatos de liga ganados en la Federacion Mexicana de Futbol hasta el año 2011\n")
+print ("|   EQUIPO    |   CAMPEONATOS GANADOS\t|   PORCENTAJE   |")
+print ("|  America    |            10 \t\t|       ------\t |")
+print ("| Cruz Azul   |             8\t\t|       ------\t |")
+print ("| Guadalajara |            11 \t\t|       ------\t |")
+print ("|  Toluca     |            10 \t\t|       ------\t |") ##Tenemos un total de 46 campeonatos 
+print ("|   UNAM      |             7\t\t|       ------\t |")
+print ("|  TOTAL      |            46 \t\t|        100%\t |\n")
+
+print ("*Calcula los porcentajes que corresponden a cada equipo conforme a la cantidad de campeonatos ganados\nPara calcular los porcentajes esta es la formula:\n")
+print ("EJEMPLO:")
+print ("| Cantidad de campeonatos          porcentaje \t|")
+print ("|         46 --------------------->   100% \t|")
+print ("|         10 --------------------->     x \t|\nSe multiplicara la cantidad de campeonatos ganados del equipo por 100 entre la cantidad TOTAL, osea la suma de todos los campeonatos ganados")
+print ("10*100/46 = 21.74\n")
+
 for rep in range (0,5):
     
     n1 = input("Ingresa la cantidad de campeonatos ganados:\n>>> ")
@@ -28,4 +42,3 @@ print ("|  Toluca     |            10 \t\t|       21.74%\t |")
 print ("|   UNAM      |             7\t\t|       15.22%\t |")
 print ("|  TOTAL      |            46 \t\t|        100%\t |")
 
-#Espero les agrade, cualquier cosa diganme que onda y si pueden ayudarme a mejorarlo hagan paro porfa 
