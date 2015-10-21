@@ -61,3 +61,4 @@ porce2 = round(porce,2 )
 print ("Porcentaje del Sexto equipo:\t",porce2,"%")
 
 print ("total:\t\t\t\t 100%")
+#####Con los porcentajes obtenidos se pueden realizar las graficas circulares, todo depende de los datos que el usuario ingrese
