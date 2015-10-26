@@ -1,8 +1,9 @@
 #!/usr/bin/python
 #hacen paro de correr esta mierda plox?
-import math
+import math#el problema que les da es por que no importan este pedo morros
+
 #tabla de distribucion de frecuencias
-print("***********TABLA DE DISTRIBUCION DE FRECUENCIAS**************")
+print("Datos ordenados")
 #obtenemos el tamaño del vector
 tama = int(input("digite la cantidad de datos que va a ingresar"))
 datos = [0]*tama #creamos el vector de la cantidad que tiene la variable tama	
@@ -66,3 +67,24 @@ def DistribucionF():
 		porcentaje=((frecuencia[i]*100)/suma)
 		print (temp_list[i],"       ",frecuencia[i],'     ',porcentaje,"%")
 		i+=1
+
+
+
+
+#para hacer los algoritmos que faltan utilizaremos este pedo?
+#necesito que alguien de grafico lo revise y me diga 
+#http://unamatematicaseltigre.blogspot.mx/2014/05/tecnicas-de-visualizacion-de-datos-ser.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
