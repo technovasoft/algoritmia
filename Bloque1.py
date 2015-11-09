@@ -51,9 +51,8 @@ def DistribucionF():
 
 	i=0
 	print("Ingresa los datos y la frecuencia:")
-	print("El dato entre comillas")
 	while i<items:
-		temp_list.append(input("dato: "))
+		temp_list.append(raw_input("dato: "))
 		frecuencia[i]=int(input("Frecuencia: "))
 		i+=1	
 
