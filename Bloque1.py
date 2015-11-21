@@ -41,32 +41,38 @@ print("m = ",m," R= ",r," A = ",a)
 
 #--------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------
+
 def DistribucionF():
 	
-	items=int(input("Dame el numero de items a ingresar"))
+	items=int(input("Dame le numero de items a ingresar"))
 	datos=[0]*items
-	temp_list = []
+	tem_list=[]
 	frecuencia=[0]*items
 	suma=0
 
 	i=0
-	print("Ingresa los datos y la frecuencia:")
+	print("ingresa Los datos y la Frecuencia:")
 	while i<items:
-		temp_list.append(raw_input("dato: "))
+		tem_list.append(input("Dato: "))
 		frecuencia[i]=int(input("Frecuencia: "))
-		i+=1	
+		i+=1
 
 	i=0
-	for x in xrange(0,len(frecuencia)):
+	
+	for x in range(0,len(frecuencia)):
 		suma+=frecuencia[i]
+		i+=1
 
 	print("\tTabla de Frecuencia\n Dato\t\tFrecuencia\tPorcentaje")
 	i=0
 	while i<items:
 		porcentaje=((frecuencia[i]*100)/suma)
-		print (temp_list[i],"       ",frecuencia[i],'     ',porcentaje,"%")
-		i+=1
+		
+		print(tem_list[i],"\t\t",frecuencia[i],"\t\t",porcentaje,"%")
 
+		i+=1
+	print("Total","\t\t",suma,"\t\t","100%")
+		
 
 
 
