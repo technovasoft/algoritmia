@@ -1,45 +1,4 @@
-#!/usr/bin/python
-#hacen paro de correr esta mierda plox?
-import math#el problema que les da es por que no importan este pedo morros
 
-#tabla de distribucion de frecuencias
-print("Datos ordenados")
-#obtenemos el tamaño del vector
-tama = int(input("digite la cantidad de datos que va a ingresar"))
-datos = [0]*tama #creamos el vector de la cantidad que tiene la variable tama	
-i= 0
-print ("ingrese sus datos")
-while i < tama:
-	datos[i]=int (input ("dato: "))
-	i+=1
-#comienza metodo de ordenacion por seleccion
-i=0
-while i < tama:
-	mayor= i
-	j=i+1
-	y=0
-	while j < tama:
-	    if datos[mayor]<datos[j]:
-	        mayor = j
-	    j+=1
-	aux = datos[mayor]
-	datos[mayor]=datos[i]
-	datos[i]=aux
-	i+=1
-	  
-print("estos son sus datos ordenados decendentemente")
-print(datos)
-m = ceil(1 + 3.3*log10(tama))
-r = datos[0]-datos[tama-1]
-a= ceil(r/m)-0.1
-print("------------------------------------------")
-print("------------------------------------------")
-print("---------------Respuestas-----------------")
-
-
-print("m = ",m," R= ",r," A = ",a)
-
-#--------------------------------------------------------------------------------------------------
 #--------------------------------------------------------------------------------------------------
 
 def DistribucionF():
@@ -73,7 +32,40 @@ def DistribucionF():
 		i+=1
 	print("Total","\t\t",suma,"\t\t","100%")
 		
-
+		
+#-------------------------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------------------------
+def GraficaPastel():
+	import matplotlib.pyplot as plt
+	import numpy as np
+	
+	datos=int(input("Cuantos datos ingresaras: "))
+	impr=[0]*datos
+	vol=[0]*datos
+	expl=[0]*datos
+	
+	for x in range(0,datos):
+		impr[x]=(input("Nombre: "))
+		vol[x]=(int(input("Numero: ")))
+	
+	mayor=0
+	for x in range(0,datos):
+		if vol[x] > mayor:
+			mayor = vol[x]
+	
+	for x in range(0,datos):
+		if vol[x] == mayor:
+			expl[x] = 0.05
+	
+	
+	
+	plt.pie(vol, explode=expl, labels=impr, autopct='%1.1f%%', shadow=True)
+	plt.title("Pastel", bbox={"facecolor":"0.8", "pad":5})
+	plt.legend()
+	plt.show()
+	
+#---------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------
 
 
 #para hacer los algoritmos que faltan utilizaremos este pedo?
