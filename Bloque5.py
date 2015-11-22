@@ -46,6 +46,14 @@ def RegresionLine():
       sy2+=y2[f]
       sxy+=xy[f]
   print(sx,"\t\t",sy,"\t\t",sx2,"\t\t",sxy,"\t",sy2)
+  
+  r=0
+  
+  suma=sxy-(a*(sx/10)*(sy/10))
+  mult=(mt.sqrt(sx2-(a*mt.pow(sx/10,2)))*(mt.sqrt(sy2-(a*mt.pow(sy/10,2)))))
+  
+  r=suma/mult
+  print("por centaje de relacion",r*100,"%")
 
 #---------------------------------------------------------------------------------
 #---------------------------------------------------------------------------------
