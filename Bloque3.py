@@ -45,3 +45,31 @@ def DesviacionMedia():
 
 #--------------------------------------------------------------------
 #--------------------------------------------------------------------
+
+def DesviacionEstandar():
+  ##DESVIACION ESTANDAR
+  import numpy as np
+  import math as mt
+  
+  ##raiz=mt.sqrt(numero)
+  ##cuadrado=mt.pow(x,2)
+  ##media=np.mean(arreglo)
+  
+  d=int(input("cuantos datos entraran: "))
+  datos=[0]*d
+  for x in range(0,d):
+    datos[x]=int(input("dato:"))
+  
+  j=np.mean(datos)
+  suma=0
+  
+  for x in range(0,d):
+    i=datos[x]
+    suma+=mt.pow(i-j,2)
+  
+  
+  desviacion=mt.sqrt(suma/d-1)
+  print("La desviacion estandar es:",desviacion)
+  
+#----------------------------------------------------------------------------------
+#----------------------------------------------------------------------------------
