@@ -1,5 +1,4 @@
 def DatosOrdenados():
-
 	import numpy as np
 	h=int(input("cuantos filas son: "))
 	g=int(input("cuantos columnas son: "))
@@ -7,16 +6,44 @@ def DatosOrdenados():
 	matriz=[]
 	for x in range(h):
 	    matriz.append([0]*g)
+	p=h*g
+	ordenada=[0]*p
 	
 	for i in range(h):
 	    for j in range(g):
 	        matriz[i][j]=int(input("dato:"))
 	
-	print("Matriz:")
+	c=0     
+	for i in range(h):
+	    for j in range(g):
+	        ordenada[c]=matriz[i][j]
+	        c=c+1
+	def bubblesort( A ):
+	  for i in range( len( A ) ):
+	    for k in range( len( A ) - 1, i, -1 ):
+	      if ( A[k] < A[k - 1] ):
+	        swap( A, k, k - 1 )
+	 
+	def swap( A, x, y ):
+	  tmp = A[x]
+	  A[x] = A[y]
+	  A[y] = tmp
+	
+	print("Matriz")  
 	print(matriz)
-	# sort along the first axis
-	print("Matriz ordenada:")
-	print(np.sort(matriz, axis=0) )
+	
+	bubblesort(ordenada)
+	
+	c=0
+	for i in range(h):
+	    for j in range(g):
+	        matriz[i][j]=ordenada[c]
+	        c=c+1
+	print("Matriz Ordenada") 
+	print(matriz)
+
+
+
 
 
 #--------------------------------------------------------------------------------------------------
