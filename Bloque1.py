@@ -86,7 +86,21 @@ def GraficaPastel():
 	
 #---------------------------------------------------------------------------------------------
 #---------------------------------------------------------------------------------------------
-
+def GraficaBarra():
+	import numpy as np
+	import matplotlib.pyplot as plt
+	
+	
+	grupos={"pene","jesus","gonorrea","penes","hitler"}
+	
+	datos = [[1, 2, 3, 4,5], [3, 5, 3, 5,6]]
+	X = np.arange(5)
+	plt.bar(X + 0.00, datos[0], color = "b", width = 0.25)
+	plt.bar(X + 0.25, datos[1], color = "g", width = 0.25)
+	
+	plt.xticks(X+0.38, ["A","B","C","D","E"])
+	
+	plt.show()
 
 #para hacer los algoritmos que faltan utilizaremos este pedo?
 #necesito que alguien de grafico lo revise y me diga 
