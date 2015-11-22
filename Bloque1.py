@@ -1,3 +1,23 @@
+def DatosOrdenados():
+
+	h=int(input("cuantos filas son: "))
+	g=int(input("cuantos columnas son: "))
+
+	datos = [[0 for x in range(h)] for x in range(g)] 
+	print("ingresa los datos: ")
+	for x in range(0,h):
+		for j in range(0,g):
+           	s=h+1
+            r=s+1
+			datos[0][j]=int(input("fila",s,"columna",r," : ")
+
+    
+	print("matriz: ")
+	for x in range(0,h):
+		print(datos[h][g])
+		for j in range(0,g):
+			print(datos[h][g])
+
 
 #--------------------------------------------------------------------------------------------------
 
