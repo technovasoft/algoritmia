@@ -1,4 +1,4 @@
-def rangoDatosNO():
+def rangoDatosNA():
  ##rango para datos no agrupados
   d=int(input("Cuantos datos ingresaras: "))
   datos=[0]*d
