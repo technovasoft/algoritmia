@@ -69,7 +69,9 @@ def DesviacionEstandar():
   
   
   desviacion=mt.sqrt(suma/d-1)
+  round(desviacion,2)
   print("La desviacion estandar es:",desviacion)
+
   
 #----------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------
