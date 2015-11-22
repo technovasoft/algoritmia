@@ -487,4 +487,109 @@ def DesviacionEstdDA():
  De=(mt.sqrt(su/n-1))
  print("La desviacion Estandar es:",De)
 
+#------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------
+
+def VarianzaDA():
+ import numpy as np
+ import math as mt
+ h=int(input("cuantos filas son: "))
+ g=int(input("cuantos columnas son: "))
+ 
+ matriz=[]
+ for x in range(h):
+     matriz.append([0]*g)
+ p=h*g
+ ordenada=[0]*p
+ 
+ for i in range(h):
+     for j in range(g):
+         matriz[i][j]=float(input("dato:"))
+ 
+ c=0     
+ for i in range(h):
+     for j in range(g):
+         ordenada[c]=matriz[i][j]
+         c=c+1
+ def bubblesort(lst):
+     "Sorts lst in place and returns it."
+     for passesLeft in range(len(lst)-1, 0, -1):
+      for index in range(passesLeft):
+          if lst[index] > lst[index + 1]:
+             lst[index], lst[index + 1] = lst[index + 1], lst[index]
+     return lst
+ 
+ print("Datos Desordenados")  
+ print(matriz)
+ 
+ bubblesort(ordenada)
+ 
+ c=0
+ for i in range(h):
+     for j in range(g):
+         matriz[i][j]=ordenada[c]
+         c=c+1
+ print("Datos Ordenados") 
+ print(matriz)
+ 
+ #g=columnas
+ #clase=numero de clases
+ #marcaClase=el promedio de las clases
+ clase=int(input("cuantas clases crearas:"))
+ 
+ mclas=[]
+ for x in range(clase):
+     mclas.append([0]*2)
+ 
+ for i in range(clase):
+     print("Clase",i+1)
+     for j in range(2):
+         mclas[i][j]=float(input(":"))
+ 
+ for i in range(clase):
+     de=mclas[i][0]
+     a=mclas[i][1]
+     
+ marc=[0]*clase
+ 
+ #marca declase
+ for x in range(clase):
+     marc[x]=((mclas[x][0]+mclas[x][1])/2)
+ 
+ 
+ #observaciones
+ i=0
+ cuantos=[0]*clase
+ for i in range(clase):
+     for x in range(h):
+         for y in range(g):
+             
+             if matriz[x][y] >= mclas[i][0] and matriz[x][y]<= mclas[i][1]:
+                 cuantos[i]+=1    
+     i+1
+ 
+ #Media Aritmetica
+ 
+ ma=0
+ suma=0
+ n=0
+ for i in range(clase):
+     suma+=(marc[i]*cuantos[i])
+     n+=cuantos[i]
+     
+ ma=(suma/n)
+ 
+ su=0
+ j=ma
+ 
+ #Varianza de datos ordenados
+ 
+ for x in range(len(marc)):
+     su+=(mt.pow(marc[x]-j,2)*cuantos[x])
+     
+ Va=(su/n)
+ print("La Varianza de datos agrupados es:",Va)
+
+
+
 
