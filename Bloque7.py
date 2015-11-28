@@ -10,3 +10,13 @@ for i in range(x):
 print("Tienes ",suma," Opciones")
 
 #------------------------------------------------------------------
+#-------------------------7.3--------------------------------------
+x = int(input("Cuantos datos ingresaras: "))
+multi = 1
+
+for i in range(x):
+	multi*=int(input("Datos: ")
+		
+print("Tienes ",multi," Opciones")
+
+#------------------------------------------------------------------
