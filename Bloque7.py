@@ -20,3 +20,13 @@ for i in range(x):
 print("Tienes ",multi," Opciones")
 
 #------------------------------------------------------------------
+#------------------------------7.4---------------------------------
+import math as mt
+r = int(input("Dame r: "))
+n = int(input("Dame n: "))
+b = mt.factorial(r)*mt.factorial(n-r)
+c = (mt.factorial(n)/ b)
+print("El numero de Combinaciones es: ",c)
+
+#------------------------------------------------------------------
+#--------------------7.5-------------------------------------------
