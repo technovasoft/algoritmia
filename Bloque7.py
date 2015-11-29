@@ -39,3 +39,7 @@ print("Las Permutaciones son: ",c)
 
 #------------------------------------------------------------------
 #----------------------------7.6-----------------------------------
+x=int(input("Dame el numero de resultados en que ocurre el evento: "))
+t=int(input("Dame el numero total de resultados: "))
+
+print("LA probabilidad es: ",x/t)
