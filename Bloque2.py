@@ -65,97 +65,18 @@ print ("La media aritmertica es:",geo)
 	   
 #------------------------------------------------------------------------------------------------------------------------------
 
-import math
-print ("MEDIA ARMÓNICA")
-print ("La media armónica, denominada H, de una cantidad finita de numeros es igual al reciproco, o inverso, de la media aritmetica de los reciprocos de dichos valores\nAsi, dados los numeros X1,X2,...,Xi con sus respectivas frecuencias absolutas N1,N2m,...,Ni, siendo N el numero total de datos, la media armonica derá igual a:")
+print("Ingresa el numero de datos que ingresaras")
 
-print ("H = N/n√Σ 1/x esto es H = N/1/x1 + 1/x2 + ... 1/Xn")
+x = int(input(">"))
+datos = [0]*x
 
-numero = input("Ingresa el numero de N del 1 al 6\n>")
-num = int(numero)
+for i in range(x):
+    datos[i]=float(input("dato >"))
 
-if (num == 1):
-    print ("Haz seleccionado 1")
-    x = input("Ingresa el numero x que desees calcular\n")
-    x1 = float(x)
-    arm = (1/x1)
-    print (arm)
-    
+suma = 0
+for i in range(x):
+    suma+=1/datos[i]
 
-elif (num == 2):
-    print ("Haz seleccionado 2")
-    x = input ("Ingresa el primer numero\n>")
-    x2 = input ("Ingresa el segundo numero\n>")
-    x_ = float (x)
-    x_2=float (x2)
-    suma = (1/x_ + 1/x_2)
-    arm = (2/suma)
-    print (arm)
+aro = x/suma
 
-elif (num == 3):
-    print ("Haz seleccionado 3")
-    x = input ("Ingresa el primer numero\n>")
-    x2 = input ("Ingresa el segundo numero\n>")
-    x3 = input ("Ingresa el tercer numero\n>")
-    x_ = float (x)
-    x_2 = float (x2)
-    x_3 = float (x3)
-    suma = (1/x_ + 1/x_2 + 1/x_3)
-    arm = (3/suma)
-    print (arm)
-
-elif (num == 4):
-    print ("Haz seleccionado 4")
-    x = input ("Ingresa el primer numero\n>")
-    x2 = input ("Ingresa el segundo numero\n>")
-    x3 = input ("Ingresa el tercer numero\n>")
-    x4 = input ("Ingresa el cuarto numero\n>")
-    x_ = float (x)
-    x_2 = float (x2)
-    x_3 = float (x3)
-    x_4 = float (x4)
-    suma = (1/x_ + 1/x_2 + 1/x_3 + 1/x_4)
-    arm = (4/suma)
-    print (arm)
-
-elif (num == 5):
-    print ("Haz seleccionado 5")
-    x = input ("Ingresa el primer numero\n>")
-    x2 = input ("Ingresa el segundo numero\n>")
-    x3 = input ("Ingresa el tercer numero\n>")
-    x4 = input ("Ingresa el cuarto numero\n>")
-    x5 = input ("Ingresa el quinto numero\n>")
-    x_ = float (x)
-    x_2 = float (x2)
-    x_3 = float (x3)
-    x_4 = float (x4)
-    x_5 = float (x5)
-    suma = (1/x_ + 1/x_2 + 1/x_3 + 1/x_4 + 1/x_5)
-    arm = (5/suma)
-
-elif (num == 6):
-    print ("Haz seleccionado 6")
-    x = input ("Ingresa el primer numero\n>")
-    x2 = input ("Ingresa el segundo numero\n>")
-    x3 = input ("Ingresa el tercer numero\n>")
-    x4 = input ("Ingresa el cuarto numero\n>")
-    x5 = input ("Ingresa el quinto numero\n>")
-    x6 = input ("Ingresa el sexto numero\n>")
-    x_ = float (x)
-    x_2 = float (x2)
-    x_3 = float (x3)
-    x_4 = float (x4)
-    x_5 = float (x5)
-    x_6 = float (x6)
-    suma = (1/x_ + 1/x_2 + 1/x_3 + 1/x_4 + 1/x_5 + 1/x_6)
-    arm = (6/suma)
-    print (arm)
-
-
-else:
-    print ("Caracter no valido")
-
-
-	
-
-
+print ("Media Armónica: ", aro)
