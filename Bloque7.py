@@ -1,5 +1,5 @@
-#-------------------7.1----------------------------------------------
-
+#-------------------7.2----------------------------------------------
+#Principio de la suma
 x = int(input("cuantos datos ingresaras:"))
 datos=[0]*x
 suma = 0
@@ -11,6 +11,7 @@ print("Tienes ",suma," Opciones")
 
 #------------------------------------------------------------------
 #-------------------------7.3--------------------------------------
+#Principio de la multiplicacion
 x = int(input("Cuantos datos ingresaras: "))
 multi = 1
 
@@ -21,6 +22,7 @@ print("Tienes ",multi," Opciones")
 
 #------------------------------------------------------------------
 #------------------------------7.4---------------------------------
+#principio de la combinacion
 import math as mt
 r = int(input("Dame r: "))
 n = int(input("Dame n: "))
@@ -30,6 +32,7 @@ print("El numero de Combinaciones es: ",c)
 
 #------------------------------------------------------------------
 #--------------------7.5-------------------------------------------
+
 import math as mt
 r = int(input("Dame r: "))
 n = int(input("Dame n: "))
